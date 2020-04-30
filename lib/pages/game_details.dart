@@ -69,7 +69,8 @@ class _GameDetailsPageState extends State<GameDetailsPage> {
                       children: <Widget>[
                         CategoryCard('SMG', 'assets/images/weapon/smg.png'),
                         CategoryCard('Rifle', 'assets/images/weapon/rifle.png'),
-                        CategoryCard('Pistol', '')
+                        CategoryCard(
+                            'Pistol', 'assets/images/weapon/pistol.png')
                       ],
                     ),
                   )

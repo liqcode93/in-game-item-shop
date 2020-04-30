@@ -1,5 +1,8 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
+import 'package:flutter/services.dart';
 import 'package:in_game_item_store/widget/game_card.dart';
 
 class HomePage extends StatefulWidget {
@@ -9,9 +12,16 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   @override
+  void initState() {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        brightness: Brightness.light,
         backgroundColor: Colors.white,
         elevation: 0,
         actions: <Widget>[
@@ -106,7 +116,7 @@ class _HomePageState extends State<HomePage> {
           icon: Icon(EvaIcons.copyOutline),
         ),
         BottomNavigationBarItem(
-          icon: Icon(EvaIcons.peopleOutline),
+          icon: Icon(EvaIcons.personOutline),
           title: Container(),
         ),
         BottomNavigationBarItem(
