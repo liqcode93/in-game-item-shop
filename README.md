@@ -1,4 +1,4 @@
-# in_game_item_store
+# in_game_item_shop
 
 A new Flutter project.
 
